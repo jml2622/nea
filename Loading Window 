@@ -1,0 +1,17 @@
+import tkinter as tk 
+from tkinter import ttk 
+from tkinter import *
+from tkinter.ttk import Combobox
+
+class Loadingwindow(Toplevel):
+   def __init__(self,window2):
+       super().__init__(window2 = window2)
+       self.title("Logging in ...")
+       self.lbl3=Label( window2, text="downloading messages please wait")
+       self.lbl3.place(x=100, y = 100)
+       f = open 
+window2=Tk
+Loadingwindow(window2)
+WIDTH = 100
+HEIGHT = 75
+window2.mainloop()

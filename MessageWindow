@@ -1,0 +1,45 @@
+from tkinter import *
+from tkinter.ttk import Combobox
+
+class MessageWindow():
+    search = StringVar
+    def __init__ (self,window):
+        file=open("26.txt")
+        window = tk.Tk()
+        text_box = tk.Text()
+        text_box
+        self.txtfld1=Entry(window, textvariable=self.search)
+        self.lbl1=Label(window, text="Search Userbase")
+        self.txtfld1.place(x=150, y=100)
+        self.lbl1.place(x=25, y=100)        
+
+        
+    data=["place",
+            "place", 
+                "place", 
+                "26.txt"]
+
+self.clicked = StringVar()
+
+    self.clicked.set("please select message")
+        
+        # self.option_menu= OptionMenu(window, self.clicked, *data)
+
+        # self.option_menu.place(x=100, y=20)
+
+
+        
+
+    def search(self):
+        print("goofy aahh")
+
+f = open ("example.txt","r")
+print(f.read())
+
+
+
+
+window=Tk()
+MessageWindow(window)
+window.geometry("600x600+10+20")
+window.mainloop()
